@@ -1,0 +1,14 @@
+/* my CSS */
+body > * {
+  padding-bottom: 20px;
+}
+
+.btn > * {
+  padding: 5px 10px;
+  border-radius: 2.5px;
+  border: 1px solid;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 12px;
+  cursor: pointer;
+}
