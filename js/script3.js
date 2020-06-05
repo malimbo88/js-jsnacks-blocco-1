@@ -1,5 +1,9 @@
 //myJavaScript2
 
+//Div preposti alla stampa risultati
+verde = document.getElementById("verde");
+rosso = document.getElementById("rosso");
+
 //lista di nomi
 var arrayNomi = ["Nicola", "Alessandro", "Linda", "Laura", "Marco"];
 

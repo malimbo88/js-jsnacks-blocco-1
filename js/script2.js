@@ -9,30 +9,31 @@ var inputUtente = document.getElementById("numero_utente")
 var n = 0;
 
 //div preposti a stampare a schermo
-var verde = document.getElementById("numero_utente")
+var verde = document.getElementById("verde");
+var rosso = document.getElementById("rosso");
 
 //Button gen
 btn.addEventListener ("click",
 function() {
 
-  // risultato finale array
-  var risultato = [];
-
   //Fai inserire un numero, che chiameremo N, all’utente.
   n = parseInt(inputUtente.value);
   console.log("Numero inserito da Utente: " + n)
 
+  //Risultato da stampare
+  var risultato = "";
+
   //Genera N * (numero scelto da utente tramite prompt) array, ognuno formato da 10 numeri casuali tra 1 e 10.
   for(var count = 0; count < n; count++) {
-    risultato.push(generaArray());
+    var nArray = generaArray();
+    risultato += nArray + " ";
   }
 
-  //Stampo il risultato a console
-  console.log("Array popolato da numeri casuali tra 1 e 10: " + generaArray())
 
   //Stampo il risultato a console
-  console.log("n array genearti in base a numero Utente: " + risultato.join(" - "))
-
+  console.log("n array genearti in base a numero Utente: " + risultato)
+  verde.innerHTML = n;
+  rosso.innerHTML = risultato;
 
 }
 );
@@ -45,7 +46,7 @@ function generaArray () {
   var array = []
 
   for (var count = 0; count < 10; count++ ) {
-  var numeroCasuale = Math.floor(Math.random() * 10) + 1;
+  var numeroCasuale = Math.floor(Math.random() * 9) + 1;
   array.push(numeroCasuale);
 }
   return array.join("")
