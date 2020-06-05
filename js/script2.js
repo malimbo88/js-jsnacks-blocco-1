@@ -8,12 +8,13 @@ var inputUtente = document.getElementById("numero_utente")
 // numero di array che racchiudero in array risultato
 var n = 0;
 
-// risultato finale array
-var risultato = [];
+
 
 //Button gen
 btn.addEventListener ("click",
 function() {
+  // risultato finale array
+  var risultato = [];
 
   //Fai inserire un numero, che chiameremo N, all’utente.
   n = parseInt(inputUtente.value);
