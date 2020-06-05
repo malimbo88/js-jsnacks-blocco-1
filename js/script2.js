@@ -32,15 +32,16 @@ function() {
     return array.join("")
   }
 
-  console.log("Array popolato da numeri casuali tra 1 e 10: " + generaArray())
-
-  console.log("n array genearti in base a numero Utente: " + risultato.join(" - "))
-  //Ogni volta che ne crei uno, stampalo a schermo.
 
   //Genera N * (numero scelto da utente tramite prompt) array, ognuno formato da 10 numeri casuali tra 1 e 10.
   for(var count = 0; count < n; count++) {
     risultato.push(generaArray());
   }
+
+  console.log("Array popolato da numeri casuali tra 1 e 10: " + generaArray())
+
+  console.log("n array genearti in base a numero Utente: " + risultato.join(" - "))
+  //Ogni volta che ne crei uno, stampalo a schermo.
 
 }
 );
